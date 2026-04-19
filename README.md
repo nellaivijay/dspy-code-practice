@@ -203,6 +203,25 @@ This is a practice environment for learning. Contributions are welcome:
 - **Additional Examples**: Add more practical examples
 - **Bug Fixes**: Report and fix issues in labs or documentation
 
+## 🔗 Related Practice Repositories
+
+Continue your learning journey with these related repositories:
+
+### AI/ML Practice
+- [🧠 LLM Fine-Tuning Practice](https://github.com/nellaivijay/llm-fine-tuning-practice) - Advanced model fine-tuning techniques
+
+### Data Engineering Practice
+- [🦆 DuckDB Code Practice](https://github.com/nellaivijay/duckdb-code-practice) - Analytics & SQL optimization
+- [⚡ Apache Spark Code Practice](https://github.com/nellaivijay/spark-code-practice) - Big data processing
+- [🏔️ Apache Iceberg Code Practice](https://github.com/nellaivijay/iceberg-code-practice) - Lakehouse architecture
+- [🔧 Apache Beam Code Practice](https://github.com/nellaivijay/beam-code-practice) - Data pipelines
+
+### Programming Practice
+- [⚙️ Scala Data Analysis Practice](https://github.com/nellaivijay/scala-dataanalysis-code-practice) - Functional programming
+
+### Resource Hub
+- [📚 Awesome My Notes](https://github.com/nellaivijay/awesome-my-notes) - Comprehensive technical notes and learning resources
+
 ## 🆘 Educational Focus
 
 This repository uses only open-source tools and focuses on educational value:
@@ -213,7 +232,7 @@ This repository uses only open-source tools and focuses on educational value:
 
 ## 📄 License
 
-MIT License - Free for educational and commercial use
+Apache License 2.0 - Free for educational and commercial use
 
 ## 👥 Community
 
