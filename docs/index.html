@@ -3,20 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSPy Code Practice - Free Hands-on Labs for Declarative LLM Programming</title>
-    <meta name="description" content="Master DSPy with free, vendor-independent hands-on labs. Practice declarative LLM programming, self-improving AI systems, chain of thought, RAG, and production deployment with real-world exercises.">
-    <meta name="keywords" content="DSPy, declarative programming, LLM, artificial intelligence, machine learning, chain of thought, RAG, AI agents, prompt engineering, self-improving programs, Python, AI engineering">
+    <title>DSPy Code Practice - Free Hands-on Labs for Declarative LLM Programming & AI Engineering</title>
+    <meta name="description" content="Master DSPy (Declarative Self-improving Language Programs) with free, vendor-independent hands-on labs. Learn declarative LLM programming, self-improving AI systems, chain of thought reasoning, RAG, AI agents, and production deployment. Comprehensive educational resource for AI engineers, data scientists, and developers.">
+    <meta name="keywords" content="DSPy, declarative programming, LLM, large language models, artificial intelligence, machine learning, chain of thought, CoT, RAG, retrieval augmented generation, AI agents, prompt engineering, self-improving programs, Python, AI engineering, data science, natural language processing, NLP, transformer models, prompt optimization, LLM orchestration">
     <meta name="author" content="DSPy Code Practice Community">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="DSPy Code Practice - Free Hands-on Labs for Declarative LLM Programming">
-    <meta property="og:description" content="Master DSPy with free, vendor-independent hands-on labs. Practice declarative LLM programming, self-improving AI systems, chain of thought, RAG, and production deployment with real-world exercises.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nellaivijay.github.io/dspy-code-practice">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DSPy Code Practice - Free Hands-on Labs for Declarative LLM Programming">
-    <meta name="twitter:description" content="Master DSPy with free, vendor-independent hands-on labs. Practice declarative LLM programming, self-improving AI systems, chain of thought, RAG, and production deployment with real-world exercises.">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
     
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nellaivijay.github.io/dspy-code-practice/">
+    <meta property="og:title" content="DSPy Code Practice - Free Hands-on Labs for Declarative LLM Programming">
+    <meta property="og:description" content="Master DSPy with free, vendor-independent hands-on labs. Learn declarative LLM programming, self-improving AI systems, chain of thought, RAG, and production deployment.">
+    <meta property="og:image" content="https://nellaivijay.github.io/dspy-code-practice/assets/dspy-og-image.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://nellaivijay.github.io/dspy-code-practice/">
+    <meta name="twitter:title" content="DSPy Code Practice - Free Hands-on Labs for Declarative LLM Programming">
+    <meta name="twitter:description" content="Master DSPy with free, vendor-independent hands-on labs. Learn declarative LLM programming, self-improving AI systems, chain of thought, RAG, and production deployment.">
+    <meta name="twitter:image" content="https://nellaivijay.github.io/dspy-code-practice/assets/dspy-twitter-image.png">
+    
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://github.com/nellaivijay/dspy-code-practice">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "DSPy Code Practice",
+      "description": "Free hands-on labs for learning DSPy and declarative LLM programming",
+      "url": "https://github.com/nellaivijay/dspy-code-practice",
+      "educationalLevel": "Beginner to Advanced",
+      "teaches": ["DSPy", "LLM Programming", "AI Engineering", "Chain of Thought", "RAG", "AI Agents"],
+      "learningResourceType": "Interactive Labs",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
     
     <style>
         * {
@@ -38,183 +67,350 @@
             max-width: 1200px;
             margin: 0 auto;
             background: white;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
             overflow: hidden;
         }
         
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 40px;
+            padding: 60px 40px;
             text-align: center;
         }
         
         header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 3em;
+            margin-bottom: 15px;
+            font-weight: 700;
         }
         
         header p {
-            font-size: 1.2em;
-            opacity: 0.9;
+            font-size: 1.3em;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto;
         }
         
         .content {
-            padding: 40px;
+            padding: 50px;
         }
         
         .section {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
         
         .section h2 {
             color: #2c3e50;
-            margin-bottom: 20px;
-            font-size: 1.8em;
+            margin-bottom: 25px;
+            font-size: 2em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .learning-path {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .phase {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 5px solid #667eea;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .phase:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+        
+        .phase h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .phase ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .phase li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .phase li:last-child {
+            border-bottom: none;
         }
         
         .lab-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
         }
         
         .lab-card {
             background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 25px;
+            border-radius: 12px;
             border-left: 4px solid #667eea;
+            transition: all 0.3s;
+        }
+        
+        .lab-card:hover {
+            background: #fff;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transform: translateY(-3px);
         }
         
         .lab-card h3 {
             color: #667eea;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+        
+        .lab-card p {
+            color: #555;
+            line-height: 1.5;
         }
         
         .cta-button {
             display: inline-block;
-            background: #667eea;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 12px 24px;
-            border-radius: 6px;
+            padding: 15px 30px;
+            border-radius: 8px;
             text-decoration: none;
             margin: 10px;
-            transition: background 0.3s;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         
         .cta-button:hover {
-            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .stat {
+            text-align: center;
+            padding: 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px;
+        }
+        
+        .stat h3 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .stat p {
+            font-size: 1.1em;
+            opacity: 0.9;
         }
         
         .footer {
-            background: #34495e;
+            background: #2c3e50;
             color: white;
-            padding: 30px;
+            padding: 40px;
             text-align: center;
         }
         
         .footer a {
             color: #667eea;
             text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            header p {
+                font-size: 1.1em;
+            }
+            .content {
+                padding: 30px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>DSPy Code Practice</h1>
-            <p>Free Hands-on Labs for Declarative LLM Programming</p>
+            <h1>🚀 DSPy Code Practice</h1>
+            <p>Free Hands-on Labs for Declarative LLM Programming & AI Engineering</p>
         </header>
         
         <div class="content">
             <div class="section">
                 <h2>🎯 Educational Mission</h2>
-                <p>A comprehensive, vendor-independent DSPy learning environment designed for developers, data engineers, and AI practitioners who want to master declarative LLM programming through hands-on practice.</p>
+                <p>A comprehensive, vendor-independent DSPy learning environment designed for developers, data engineers, data scientists, and AI practitioners who want to master declarative LLM programming through hands-on practice. Built for the community, completely free and open source.</p>
             </div>
             
             <div class="section">
-                <h2>🎓 Learning Approach</h2>
-                <p>Our labs are designed to build knowledge progressively:</p>
-                <ul>
-                    <li><strong>Foundation (Labs 0-2)</strong>: Setup, fundamentals, and first programs</li>
-                    <li><strong>Core Concepts (Labs 3-5)</strong>: Signatures, modules, evaluation, and optimization</li>
-                    <li><strong>Advanced Patterns (Labs 6-8)</strong>: Complex reasoning, pipelines, and RAG</li>
-                    <li><strong>Production Applications (Labs 9-11)</strong>: Agents, real-world apps, and deployment</li>
-                </ul>
-            </div>
-            
-            <div class="section">
-                <h2>🚀 Quick Start</h2>
-                <p>Get started with DSPy learning:</p>
-                <ol>
-                    <li>Clone the repository: <code>git clone https://github.com/nellaivijay/dspy-code-practice.git</code></li>
-                    <li>Install dependencies: <code>pip install -r requirements.txt</code></li>
-                    <li>Set up your LLM API key</li>
-                    <li>Start with Lab 0: Environment Setup</li>
-                </ol>
-            </div>
-            
-            <div class="section">
-                <h2>📚 Available Labs</h2>
-                <div class="lab-grid">
-                    <div class="lab-card">
-                        <h3>Lab 0: Environment Setup</h3>
-                        <p>Install DSPy and configure your development environment</p>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>11</h3>
+                        <p>Progressive Labs</p>
                     </div>
-                    <div class="lab-card">
-                        <h3>Lab 1: DSPy Fundamentals</h3>
-                        <p>Understand the declarative programming paradigm</p>
+                    <div class="stat">
+                        <h3>80+</h3>
+                        <p>Hands-on Exercises</p>
                     </div>
-                    <div class="lab-card">
-                        <h3>Lab 2: Your First DSPy Program</h3>
-                        <p>Build your first complete DSPy application</p>
+                    <div class="stat">
+                        <h3>4</h3>
+                        <p>Learning Phases</p>
                     </div>
-                    <div class="lab-card">
-                        <h3>Lab 3: Signatures and Modules</h3>
-                        <p>Master DSPy's core building blocks</p>
-                    </div>
-                    <div class="lab-card">
-                        <h3>Lab 4: Data and Evaluation</h3>
-                        <p>Measure and improve program performance</p>
-                    </div>
-                    <div class="lab-card">
-                        <h3>Lab 5: Optimization Strategies</h3>
-                        <p>Make your programs self-improving</p>
-                    </div>
-                    <div class="lab-card">
-                        <h3>Lab 6: Chain of Thought</h3>
-                        <p>Implement complex reasoning patterns</p>
-                    </div>
-                    <div class="lab-card">
-                        <h3>Lab 7: Multi-Stage Programs</h3>
-                        <p>Build sophisticated AI pipelines</p>
-                    </div>
-                    <div class="lab-card">
-                        <h3>Lab 8: Retrieval Augmented Generation</h3>
-                        <p>RAG systems with DSPy</p>
-                    </div>
-                    <div class="lab-card">
-                        <h3>Lab 9: Building AI Agents</h3>
-                        <p>Create autonomous AI systems</p>
-                    </div>
-                    <div class="lab-card">
-                        <h3>Lab 10: Real-World Applications</h3>
-                        <p>Practical use cases and patterns</p>
-                    </div>
-                    <div class="lab-card">
-                        <h3>Lab 11: Production Deployment</h3>
-                        <p>Deploy, monitor, and scale DSPy systems</p>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Free & Open Source</p>
                     </div>
                 </div>
             </div>
             
             <div class="section">
-                <h2>🔗 Resources</h2>
+                <h2>🎓 Progressive Learning Path</h2>
+                <div class="learning-path">
+                    <div class="phase">
+                        <h3>Phase 1: Foundation</h3>
+                        <p><strong>Labs 0-2</strong></p>
+                        <ul>
+                            <li>Environment Setup & Configuration</li>
+                            <li>DSPy Fundamentals & Paradigm</li>
+                            <li>First Complete Programs</li>
+                        </ul>
+                    </div>
+                    <div class="phase">
+                        <h3>Phase 2: Core Concepts</h3>
+                        <p><strong>Labs 3-5</strong></p>
+                        <ul>
+                            <li>Signatures & Modules</li>
+                            <li>Data & Evaluation</li>
+                            <li>Optimization Strategies</li>
+                        </ul>
+                    </div>
+                    <div class="phase">
+                        <h3>Phase 3: Advanced Patterns</h3>
+                        <p><strong>Labs 6-8</strong></p>
+                        <ul>
+                            <li>Chain of Thought</li>
+                            <li>Multi-Stage Programs</li>
+                            <li>RAG Systems</li>
+                        </ul>
+                    </div>
+                    <div class="phase">
+                        <h3>Phase 4: Production</h3>
+                        <p><strong>Labs 9-11</strong></p>
+                        <ul>
+                            <li>AI Agents</li>
+                            <li>Real-World Applications</li>
+                            <li>Production Deployment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>📚 Comprehensive Lab Curriculum</h2>
+                <div class="lab-grid">
+                    <div class="lab-card">
+                        <h3>Lab 0: Environment Setup</h3>
+                        <p>Install DSPy, configure LLM providers, and validate your development environment with hands-on exercises.</p>
+                    </div>
+                    <div class="lab-card">
+                        <h3>Lab 1: DSPy Fundamentals</h3>
+                        <p>Understand the declarative programming paradigm, learn core concepts: Signatures, Modules, and Teleprompters.</p>
+                    </div>
+                    <div class="lab-card">
+                        <h3>Lab 2: Your First DSPy Program</h3>
+                        <p>Build complete DSPy applications end-to-end with error handling and practical exercises.</p>
+                    </div>
+                    <div class="lab-card">
+                        <h3>Lab 3: Signatures and Modules</h3>
+                        <p>Master DSPy's core building blocks, design effective signatures, and compose complex modules.</p>
+                    </div>
+                    <div class="lab-card">
+                        <h3>Lab 4: Data and Evaluation</h3>
+                        <p>Learn to create quality datasets, implement evaluation metrics, and measure program performance.</p>
+                    </div>
+                    <div class="lab-card">
+                        <h3>Lab 5: Optimization Strategies</h3>
+                        <p>Make DSPy programs self-improving using teleprompters and advanced optimization techniques.</p>
+                    </div>
+                    <div class="lab-card">
+                        <h3>Lab 6: Chain of Thought</h3>
+                        <p>Implement complex reasoning patterns, self-consistency, and tree-of-thoughts methods.</p>
+                    </div>
+                    <div class="lab-card">
+                        <h3>Lab 7: Multi-Stage Programs</h3>
+                        <p>Build sophisticated AI pipelines with conditional routing, parallel processing, and feedback loops.</p>
+                    </div>
+                    <div class="lab-card">
+                        <h3>Lab 8: Retrieval Augmented Generation</h3>
+                        <p>Create RAG systems with vector retrieval, query expansion, and advanced ranking strategies.</p>
+                    </div>
+                    <div class="lab-card">
+                        <h3>Lab 9: Building AI Agents</h3>
+                        <p>Create autonomous AI systems with tool use, memory management, and multi-agent collaboration.</p>
+                    </div>
+                    <div class="lab-card">
+                        <h3>Lab 10: Real-World Applications</h3>
+                        <p>Build practical applications: customer support, document analysis, recommendation systems.</p>
+                    </div>
+                    <div class="lab-card">
+                        <h3>Lab 11: Production Deployment</h3>
+                        <p>Deploy DSPy applications with Docker, FastAPI, monitoring, scaling, and security best practices.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>🚀 Quick Start Guide</h2>
+                <p>Begin your DSPy learning journey in minutes:</p>
+                <ol style="margin: 20px 0; padding-left: 30px;">
+                    <li><strong>Clone the repository:</strong> <code>git clone https://github.com/nellaivijay/dspy-code-practice.git</code></li>
+                    <li><strong>Install dependencies:</strong> <code>pip install -r requirements.txt</code></li>
+                    <li><strong>Set up LLM provider:</strong> Configure your OpenAI, Anthropic, or local model API key</li>
+                    <li><strong>Start learning:</strong> Begin with Lab 0: Environment Setup</li>
+                </ol>
+            </div>
+            
+            <div class="section">
+                <h2>🎓 Educational Features</h2>
+                <p>Our learning environment includes:</p>
+                <ul style="margin: 20px 0; padding-left: 30px;">
+                    <li><strong>Interactive Notebooks:</strong> Jupyter notebooks for hands-on practice</li>
+                    <li><strong>Progressive Complexity:</strong> Labs build skills step-by-step</li>
+                    <li><strong>Real-World Projects:</strong> Practical AI engineering applications</li>
+                    <li><strong>Production Patterns:</strong> Best practices for deployment and operations</li>
+                    <li><strong>Vendor Independence:</strong> Works with multiple LLM providers</li>
+                    <li><strong>Community Driven:</strong> Open source with community contributions</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>🔗 Learning Resources</h2>
                 <p>
                     <a href="https://github.com/stanfordnlp/dspy" class="cta-button">Official DSPy Documentation</a>
-                    <a href="https://github.com/nellaivijay/dspy-code-practice/wiki" class="cta-button">Wiki</a>
+                    <a href="https://github.com/nellaivijay/dspy-code-practice/wiki" class="cta-button">Comprehensive Wiki</a>
                     <a href="https://github.com/nellaivijay/dspy-code-practice" class="cta-button">GitHub Repository</a>
                 </p>
             </div>
@@ -222,6 +418,7 @@
         
         <footer>
             <p>Built for the AI engineering community | <a href="https://github.com/nellaivijay/dspy-code-practice">DSPy Code Practice</a></p>
+            <p style="margin-top: 15px; font-size: 0.9em; opacity: 0.8;">Educational resource for learning declarative LLM programming</p>
         </footer>
     </div>
 </body>
