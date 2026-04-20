@@ -207,11 +207,15 @@ After completing the labs, apply your skills to build:
 
 ## 📖 Documentation
 
+### 📖 Wiki
+Comprehensive wiki documentation is available with detailed guides:
+- [Wiki Home](docs/wiki/Home.html) - Main wiki page with complete guide
+- [Lab 0: Environment Setup](docs/wiki/Lab-0-Environment-Setup.html) - Installation and configuration
+
 ### Core Documentation
 - [Lab Guides](labs/) - Detailed lab instructions
 - [Notebooks](notebooks/) - Interactive learning materials
 - [Solutions](solutions/) - Reference implementations
-- [Wiki](https://github.com/nellaivijay/dspy-code-practice/wiki) - Comprehensive guides
 
 ### External Resources
 - [DSPy Official Documentation](https://github.com/stanfordnlp/dspy)
