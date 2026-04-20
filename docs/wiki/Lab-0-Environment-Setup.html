@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 0: Environment Setup - DSPy Code Practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        
+        h4 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+            color: #ecf0f1;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background: #34495e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lab 0: Environment Setup</h1>
+            <p>DSPy Code Practice</p>
+        </header>
+        
+        <div class="content">
+            <a href="Home.html" class="back-link">← Back to Wiki Home</a>
+            
+            <h2>Overview</h2>
+            <p>This lab guides you through setting up your DSPy development environment. A properly configured environment is essential for building and testing DSPy programs effectively.</p>
+
+            <h2>Learning Objectives</h2>
+            <ul>
+                <li>Install DSPy and required dependencies</li>
+                <li>Configure LLM provider credentials</li>
+                <li>Set up Python development environment</li>
+                <li>Validate installation with test programs</li>
+                <li>Understand different LLM provider options</li>
+            </ul>
+
+            <h2>Prerequisites</h2>
+            <ul>
+                <li>Python 3.8 or higher</li>
+                <li>pip (Python package manager)</li>
+                <li>Basic command line familiarity</li>
+                <li>API key for at least one LLM provider</li>
+            </ul>
+
+            <h2>Installation Steps</h2>
+            
+            <h3>1. Check Python Version</h3>
+            <pre><code>python --version
+# Should show Python 3.8 or higher</code></pre>
+
+            <h3>2. Create Virtual Environment (Recommended)</h3>
+            <pre><code># Create virtual environment
+python -m venv dspy_env
+
+# Activate virtual environment
+# On Linux/Mac:
+source dspy_env/bin/activate
+# On Windows:
+dspy_env\Scripts\activate</code></pre>
+
+            <h3>3. Install Dependencies</h3>
+            <pre><code>pip install -r requirements.txt</code></pre>
+
+            <p>This will install DSPy and required packages for LLM integration.</p>
+
+            <h3>4. Configure LLM Provider</h3>
+            <p>Set your API key as an environment variable:</p>
+            <pre><code># For OpenAI
+export OPENAI_API_KEY="your-api-key"
+
+# For Anthropic
+export ANTHROPIC_API_KEY="your-api-key"
+
+# For other providers, check their documentation</code></pre>
+
+            <h3>5. Validate Installation</h3>
+            <pre><code>import dspy
+print(f"DSPy version: {dspy.__version__}")</code></pre>
+
+            <h2>LLM Provider Options</h2>
+            
+            <h3>OpenAI</h3>
+            <ul>
+                <li>GPT-3.5, GPT-4 models</li>
+                <li>High-quality responses</li>
+                <li>Requires API key</li>
+            </ul>
+
+            <h3>Anthropic</h3>
+            <ul>
+                <li>Claude models</li>
+                <li>Strong reasoning capabilities</li>
+                <li>Requires API key</li>
+            </ul>
+
+            <h3>Local Models</h3>
+            <ul>
+                <li>Use with Hugging Face transformers</li>
+                <li>No API key required</li>
+                <li>Requires GPU for best performance</li>
+            </ul>
+
+            <h2>Test Program</h2>
+            <p>Create a simple test to verify your setup:</p>
+            <pre><code>import dspy
+
+# Configure your LLM provider
+import os
+api_key = os.getenv("OPENAI_API_KEY")
+
+# Create a simple signature
+class SimpleQA(dspy.Signature):
+    question = dspy.InputField()
+    answer = dspy.OutputField()
+
+# Test the setup
+qa = dspy.Predict(SimpleQA)
+result = qa(question="What is 2 + 2?")
+print(f"Result: {result.answer}")</code></pre>
+
+            <h2>Troubleshooting</h2>
+            
+            <h3>Import Errors</h3>
+            <p><strong>Problem</strong>: <code>ModuleNotFoundError: No module named 'dspy'</code></p>
+            <p><strong>Solution</strong>: <code>pip install dspy-ai</code></p>
+
+            <h3>API Key Errors</h3>
+            <p><strong>Problem</strong>: API authentication fails</p>
+            <p><strong>Solution</strong>: Verify your API key is set correctly and has sufficient credits</p>
+
+            <h3>Version Conflicts</h3>
+            <p><strong>Problem</strong>: Dependency conflicts</p>
+            <p><strong>Solution</strong>: <code>pip install --upgrade pip && pip install --upgrade dspy-ai</code></p>
+
+            <h2>Next Steps</h2>
+            <p>After completing this lab:</p>
+            <ol>
+                <li>Verify DSPy is installed correctly</li>
+                <li>Test with a simple program</li>
+                <li>Configure your preferred LLM provider</li>
+                <li>Proceed to Lab 1: DSPy Fundamentals</li>
+            </ol>
+
+            <h2>Additional Resources</h2>
+            <ul>
+                <li><a href="https://github.com/stanfordnlp/dspy">DSPy Official Documentation</a></li>
+                <li><a href="https://github.com/stanfordnlp/dspy#installation">Installation Guide</a></li>
+                <li><a href="https://docs.python.org/3/library/venv.html">Python Virtual Environments</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>Built for the AI engineering community | <a href="https://github.com/nellaivijay/dspy-code-practice">DSPy Code Practice</a></p>
+        </div>
+    </div>
+</body>
+</html>

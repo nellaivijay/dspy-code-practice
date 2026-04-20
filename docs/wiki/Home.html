@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSPy Code Practice Wiki</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        
+        h4 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+            color: #ecf0f1;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background: #34495e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DSPy Code Practice Wiki</h1>
+            <p>Comprehensive Documentation for Hands-on Learning</p>
+        </header>
+        
+        <div class="content">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#learning-path">Learning Path</a></li>
+                <li><a href="#lab-documentation">Lab Documentation</a></li>
+                <li><a href="#technical-concepts">Technical Concepts</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+                <li><a href="#contributing">Contributing</a></li>
+            </ul>
+
+            <h2 id="getting-started">Getting Started</h2>
+            
+            <h3>Prerequisites</h3>
+            <p>Before starting with the DSPy labs, ensure you have:</p>
+            <ul>
+                <li>Python 3.8 or higher</li>
+                <li>pip (Python package manager)</li>
+                <li>Basic knowledge of Python programming</li>
+                <li>API key for an LLM provider (OpenAI, Anthropic, etc.)</li>
+            </ul>
+
+            <h3>Installation</h3>
+            <p>1. Clone the repository:</p>
+            <pre><code>git clone https://github.com/nellaivijay/dspy-code-practice.git
+cd dspy-code-practice</code></pre>
+
+            <p>2. Install dependencies:</p>
+            <pre><code>pip install -r requirements.txt</code></pre>
+
+            <p>3. Set up your LLM API key:</p>
+            <pre><code>export OPENAI_API_KEY="your-api-key"
+# or for other providers
+export ANTHROPIC_API_KEY="your-api-key"</code></pre>
+
+            <h3>Quick Start</h3>
+            <ol>
+                <li>Complete Lab 0: Environment Setup</li>
+                <li>Progress through labs sequentially</li>
+                <li>Use Jupyter notebooks for interactive learning</li>
+                <li>Reference solution notebooks when needed</li>
+            </ol>
+
+            <h2 id="learning-path">Learning Path</h2>
+            
+            <h3>Phase 1: Foundation (Labs 0-2)</h3>
+            <p><strong>Duration</strong>: 2-3 hours<br>
+            <strong>Focus</strong>: Setup and first steps with DSPy</p>
+
+            <ol>
+                <li><strong>Lab 0: Environment Setup</strong>
+                    <ul>
+                        <li>Install DSPy and dependencies</li>
+                        <li>Configure LLM providers</li>
+                        <li>Validate installation</li>
+                        <li>Understand provider options</li>
+                    </ul>
+                </li>
+                <li><strong>Lab 1: DSPy Fundamentals</strong>
+                    <ul>
+                        <li>Understand declarative programming paradigm</li>
+                        <li>Learn core DSPy concepts</li>
+                        <li>Build your first signature</li>
+                        <li>Compare imperative vs declarative approaches</li>
+                    </ul>
+                </li>
+                <li><strong>Lab 2: Your First DSPy Program</strong>
+                    <ul>
+                        <li>Build complete programs end-to-end</li>
+                        <li>Handle errors and edge cases</li>
+                        <li>Test and debug DSPy programs</li>
+                        <li>Optimize basic program performance</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>Phase 2: Core Concepts (Labs 3-5)</h3>
+            <p><strong>Duration</strong>: 4-5 hours<br>
+            <strong>Focus</strong>: Essential DSPy building blocks</p>
+
+            <ol>
+                <li><strong>Lab 3: Signatures and Modules</strong>
+                    <ul>
+                        <li>Master signature design patterns</li>
+                        <li>Understand different module types</li>
+                        <li>Build custom modules</li>
+                        <li>Compose modules into programs</li>
+                    </ul>
+                </li>
+                <li><strong>Lab 4: Data and Evaluation</strong>
+                    <ul>
+                        <li>Create quality datasets</li>
+                        <li>Implement evaluation metrics</li>
+                        <li>Measure program performance</li>
+                        <li>Use data to improve programs</li>
+                    </ul>
+                </li>
+                <li><strong>Lab 5: Optimization Strategies</strong>
+                    <ul>
+                        <li>Understand DSPy optimization</li>
+                        <li>Master different teleprompters</li>
+                        <li>Implement custom optimization</li>
+                        <li>Optimize for specific tasks</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>Phase 3: Advanced Patterns (Labs 6-8)</h3>
+            <p><strong>Duration</strong>: 5-6 hours<br>
+            <strong>Focus</strong>: Complex AI systems and pipelines</p>
+
+            <ol>
+                <li><strong>Lab 6: Chain of Thought</strong>
+                    <ul>
+                        <li>Implement CoT reasoning</li>
+                        <li>Handle complex multi-step problems</li>
+                        <li>Optimize CoT performance</li>
+                        <li>Use advanced CoT techniques</li>
+                    </ul>
+                </li>
+                <li><strong>Lab 7: Multi-Stage Programs</strong>
+                    <ul>
+                        <li>Design program pipelines</li>
+                        <li>Implement conditional routing</li>
+                        <li>Handle parallel processing</li>
+                        <li>Optimize multi-stage systems</li>
+                    </ul>
+                </li>
+                <li><strong>Lab 8: Retrieval Augmented Generation</strong>
+                    <ul>
+                        <li>Build RAG systems</li>
+                        <li>Implement vector retrieval</li>
+                        <li>Optimize retrieval quality</li>
+                        <li>Handle advanced RAG patterns</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>Phase 4: Production Applications (Labs 9-11)</h3>
+            <p><strong>Duration</strong>: 6-8 hours<br>
+            <strong>Focus</strong>: Real-world applications and deployment</p>
+
+            <ol>
+                <li><strong>Lab 9: Building AI Agents</strong>
+                    <ul>
+                        <li>Create autonomous AI systems</li>
+                        <li>Implement tool use</li>
+                        <li>Handle agent memory</li>
+                        <li>Build multi-agent systems</li>
+                    </ul>
+                </li>
+                <li><strong>Lab 10: Real-World Applications</strong>
+                    <ul>
+                        <li>Build practical applications</li>
+                        <li>Handle production considerations</li>
+                        <li>Implement optimization strategies</li>
+                        <li>Scale DSPy applications</li>
+                    </ul>
+                </li>
+                <li><strong>Lab 11: Production Deployment</strong>
+                    <ul>
+                        <li>Deploy DSPy applications</li>
+                        <li>Implement monitoring</li>
+                        <li>Handle scaling</li>
+                        <li>Ensure security and reliability</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h2 id="lab-documentation">Lab Documentation</h2>
+            
+            <h3>Beginner Labs</h3>
+            <ul>
+                <li>Lab 0: Environment Setup - Complete environment configuration</li>
+                <li>Lab 1: DSPy Fundamentals - Core concepts and paradigm</li>
+                <li>Lab 2: Your First DSPy Program - Building complete applications</li>
+            </ul>
+
+            <h3>Intermediate Labs</h3>
+            <ul>
+                <li>Lab 3: Signatures and Modules - Core building blocks</li>
+                <li>Lab 4: Data and Evaluation - Measuring performance</li>
+                <li>Lab 5: Optimization Strategies - Self-improving programs</li>
+            </ul>
+
+            <h3>Advanced Labs</h3>
+            <ul>
+                <li>Lab 6: Chain of Thought - Complex reasoning patterns</li>
+                <li>Lab 7: Multi-Stage Programs - Advanced pipelines</li>
+                <li>Lab 8: Retrieval Augmented Generation - RAG systems</li>
+            </ul>
+
+            <h3>Production Labs</h3>
+            <ul>
+                <li>Lab 9: Building AI Agents - Autonomous systems</li>
+                <li>Lab 10: Real-World Applications - Practical use cases</li>
+                <li>Lab 11: Production Deployment - Deployment and operations</li>
+            </ul>
+
+            <h2 id="technical-concepts">Technical Concepts</h2>
+            
+            <h3>DSPy Fundamentals</h3>
+            
+            <h4>Declarative vs Imperative Programming</h4>
+            <p><strong>Imperative Approach:</strong></p>
+            <pre><code># Manual prompt engineering
+prompt = f"You are a helpful assistant. Answer: {question}"
+response = llm(prompt)</code></pre>
+
+            <p><strong>Declarative Approach (DSPy):</strong></p>
+            <pre><code># Declare what you want
+class QA(dspy.Signature):
+    question = dspy.InputField()
+    answer = dspy.OutputField()
+
+qa = dspy.Predict(QA)
+result = qa(question="What is AI?")</code></pre>
+
+            <h4>Core Components</h4>
+            <ol>
+                <li><strong>Signatures</strong>: Define input/output interfaces</li>
+                <li><strong>Modules</strong>: Process data according to signatures</li>
+                <li><strong>Teleprompters</strong>: Optimize programs automatically</li>
+                <li><strong>Metrics</strong>: Measure program performance</li>
+            </ol>
+
+            <h3>Advanced Concepts</h3>
+            
+            <h4>Chain of Thought</h4>
+            <ul>
+                <li>Step-by-step reasoning</li>
+                <li>Self-consistency</li>
+                <li>Tree of thoughts</li>
+                <li>Analogical reasoning</li>
+            </ul>
+
+            <h4>Multi-Stage Programs</h4>
+            <ul>
+                <li>Pipeline composition</li>
+                <li>Conditional routing</li>
+                <li>Parallel processing</li>
+                <li>Feedback loops</li>
+            </ul>
+
+            <h4>RAG Systems</h4>
+            <ul>
+                <li>Vector retrieval</li>
+                <li>Query expansion</li>
+                <li>Hybrid retrieval</li>
+                <li>Citation generation</li>
+            </ul>
+
+            <h2 id="troubleshooting">Troubleshooting</h2>
+            
+            <h3>Common Issues</h3>
+            
+            <h4>Installation Errors</h4>
+            <pre><code>pip install --upgrade pip
+pip install dspy-ai</code></pre>
+
+            <h4>API Key Errors</h4>
+            <ul>
+                <li>Verify API key is correct</li>
+                <li>Check environment variables</li>
+                <li>Ensure you have credits/usage available</li>
+            </ul>
+
+            <h4>Memory Issues</h4>
+            <pre><code>export DSPY_MEMORY_LIMIT=4g</code></pre>
+
+            <h2 id="contributing">Contributing</h2>
+            <p>This is an educational resource for the community. Contributions are welcome:</p>
+            <ul>
+                <li><strong>New Labs</strong>: Suggest new lab topics</li>
+                <li><strong>Better Explanations</strong>: Improve content clarity</li>
+                <li><strong>Additional Examples</strong>: Add more practical examples</li>
+                <li><strong>Bug Fixes</strong>: Report and fix issues</li>
+            </ul>
+
+            <h2 id="resources">Resources</h2>
+            <ul>
+                <li><a href="https://github.com/stanfordnlp/dspy">DSPy Official Documentation</a></li>
+                <li><a href="https://arxiv.org/abs/2310.03714">DSPy Paper</a></li>
+                <li><a href="https://docs.python.org/3/">Python Documentation</a></li>
+                <li><a href="https://github.com/josephmisiti/awesome-machine-learning">Machine Learning Resources</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>Built for the AI engineering community | <a href="https://github.com/nellaivijay/dspy-code-practice">DSPy Code Practice</a></p>
+        </div>
+    </div>
+</body>
+</html>
