@@ -19,6 +19,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
 # Virtual Environment
 venv/
@@ -37,6 +38,8 @@ venv.bak/
 # Jupyter Notebook
 .ipynb_checkpoints
 *.ipynb
+.ipynb_checkpoints/
+!notebooks/*.ipynb
 
 # Environment variables
 .env
@@ -46,6 +49,9 @@ venv.bak/
 data/*.csv
 data/*.json
 data/*.parquet
+data/*.txt
+!data/.gitkeep
+!data/README.md
 
 # Logs
 *.log
@@ -61,3 +67,16 @@ htmlcov/
 
 # DSPy specific
 .dspy_cache/
+
+# Model cache
+.cache/
+.huggingface/
+
+# Outputs
+outputs/
+generated/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak

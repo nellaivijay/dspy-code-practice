@@ -1,5 +1,29 @@
 # DSPy Code Practice
 
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)](https://jupyter.org/)
+[![DSPy](https://img.shields.io/badge/DSPy-2.4%2B-green)](https://github.com/stanfordnlp/dspy)
+
+## 📖 Table of Contents
+
+- [🎯 Educational Mission](#-educational-mission)
+- [🎓 Why This Repository?](#-why-this-repository)
+- [🎓 Learning Approach](#-learning-approach)
+- [🏗️ Curriculum Structure](#-curriculum-structure)
+- [🚀 Quick Start](#-quick-start)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [📚 Repository Structure](#-repository-structure)
+- [🎓 Learning Path](#-learning-path)
+- [💡 Project Ideas](#-project-ideas)
+- [📖 Documentation](#-documentation)
+- [🤝 Contributing](#-contributing)
+- [🔗 Related Practice Repositories](#-related-practice-repositories)
+- [🆘 Educational Focus](#-educational-focus)
+- [📄 License](#-license)
+- [👥 Community](#-community)
+- [🎯 Next Steps](#-next-steps)
+
 ## 🎯 Educational Mission
 
 A comprehensive, hands-on learning environment for mastering DSPy (Declarative Self-improving Language Programs). Build practical skills in programming with language models through progressive labs and real-world applications.
